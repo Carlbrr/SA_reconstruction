@@ -1,0 +1,44 @@
+Data Gathering
+https://github.com/mircealungu/reconstruction/blob/master/materials/Data_Gathering.ipynb
+
+1. Make own Abstract Syntax Tree. Look link above - reggex based dependency gathering has limitations in 
+outcommented imports etc. Also, python has embedded support e.g. the 'ast' pacakge
+
+2. From the abstraction topic in reconsontruction we discuss approaches of abstraction/ knowledge inference on different abstraction levels.
+In examples we see different approaches, for instance, aggregating metrics and adding them to the graph at levels. Or network analysis
+based on # of references etc.
+It is basically mapping metrics on visualizations.
+
+
+3. Lecture 3 was basically:
+Consider adding an evolutionary analysis component to your project.
+
+churn metrics
+dead-code detection?
+developer-collaboration analysis
+
+4. Lecture 4 is Dynamic Analysis, aka. looking at the running system. Why? because static analysis has some limitations
+with code that might look connected in the graph, but is never actually called, overestimating relationships (runtime polymorphism, many versions might be called in practice)
+Dynamic analysis is a technique of program analysis that consists of instrumenting and observing the behavior
+of a program while it is executing. We do this by collection execution traces (e.g. records of sequence of actions that happened)
+And instrumenting is just modifying the system st. we can extract info at runtime
+How?
+- Logging
+- Instrumenting
+- network monitoring.
+
+For us:
+Extract dynamic dependencies from your case study system.
+
+can you create a wrapper that traces method calls (both the caller and the callee?)
+
+fully qualified names of the caller method
+
+obs. Dynamic analysis is an essential complement for static analysis for dependency extraction.
+
+The information extracted from dynamic analysis can be aggregated along the same axes as static
+
+
+5. visualizations
+look at slides for examples of other students diagrams!
+Polymetric Module Views?

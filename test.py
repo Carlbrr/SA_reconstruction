@@ -1,7 +1,7 @@
 import os
 from urllib import request
 import numpy as np
-import ast 
+#import ast 
 from zeeguu.config.loader import load_configuration_or_abort
 
 #print(os.getcwd())

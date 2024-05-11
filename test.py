@@ -3,7 +3,7 @@ from urllib import request
 import numpy as np
 #import ast 
 from zeeguu.config.loader import load_configuration_or_abort
-from ._only_teachers_decorator import only_teachers
+from ._only_teachers_decorator import only_teachers, only_something_else
 
 #print(os.getcwd())
 print(np.zeros((2, 2)))
@@ -18,3 +18,7 @@ def has_permission_for_cohort_api(id):
     if has_permission_for_cohort(id):
         return "OK"
     return "Denied"
+
+@only_teachers
+def has_permission_for_cohort(id):
+    return True
